@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<section class="product-grid">
+  <div class="container">
+    <div class="grid grid--cols-4">
+      {% for product in products %} {% include
+      "entities/product/product-card.html" %} {% endfor %}
+    </div>
+  </div>
+</section>

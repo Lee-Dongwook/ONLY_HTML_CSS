@@ -1,0 +1,16 @@
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.site-header__logo {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}

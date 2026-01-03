@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Shop</title>
+
+    <!-- reset -->
+    <link rel="stylesheet" href="/app/reset.css" />
+
+    <!-- shared styles -->
+    <link rel="stylesheet" href="/shared/styles/variables.css" />
+    <link rel="stylesheet" href="/shared/styles/colors.css" />
+    <link rel="stylesheet" href="/shared/styles/typography.css" />
+
+    <!-- shared layout -->
+    <link rel="stylesheet" href="/shared/layout/container.css" />
+    <link rel="stylesheet" href="/shared/layout/grid.css" />
+    <link rel="stylesheet" href="/shared/layout/stack.css" />
+
+    <!-- ui -->
+    <link rel="stylesheet" href="/shared/ui/button.css" />
+    <link rel="stylesheet" href="/shared/ui/link.css" />
+
+    <!-- entities -->
+    <link rel="stylesheet" href="/entities/product/product.css" />
+
+    <!-- widgets -->
+    <link rel="stylesheet" href="/widgets/header/header.css" />
+    <link rel="stylesheet" href="/widgets/product-grid/product-grid.css" />
+    <link rel="stylesheet" href="/widgets/footer/footer.css" />
+  </head>
+  <body>
+    {% include "widgets/header/header.html" %}
+
+    <main>{% block content %}{% endblock %}</main>
+
+    {% include "widgets/footer/footer.html" %}
+  </body>
+</html>
