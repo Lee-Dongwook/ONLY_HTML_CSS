@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<div class="product-price">
+  {% if product.discount_price %}
+  <span class="product-price__original"> {{ product.original_price }}원 </span>
+  <span class="product-price__discount"> {{ product.discount_price }}원 </span>
+  {% else %}
+  <span class="product-price__current"> {{ product.price }}원 </span>
+  {% endif %}
+</div>
